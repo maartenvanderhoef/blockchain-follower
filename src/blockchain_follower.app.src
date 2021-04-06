@@ -1,0 +1,18 @@
+{application, blockchain_follower,
+ [{description, "basic blockchain following application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {blockchain_follower_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    lager,
+    rocksdb
+   ]},
+  {included_applications, [blockchain]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
